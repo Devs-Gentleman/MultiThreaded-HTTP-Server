@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notes Board</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero card">
+        <p class="eyebrow">Phase 7 REST demo</p>
+        <h1>Notes Board</h1>
+        <p class="lead">
+          A tiny browser UI that talks to the server's JSON API. Add notes, delete them, and
+          watch the responses come back from the worker pool.
+        </p>
+      </section>
+
+      <section class="card composer">
+        <label for="note-input">New note</label>
+        <div class="composer-row">
+          <input id="note-input" type="text" maxlength="280" placeholder="Write something short" />
+          <button id="add-note" type="button">Add note</button>
+        </div>
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card notes-panel">
+        <div class="panel-header">
+          <h2>Saved notes</h2>
+          <button id="refresh-notes" type="button" class="ghost">Refresh</button>
+        </div>
+        <ul id="notes-list" class="notes-list"></ul>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

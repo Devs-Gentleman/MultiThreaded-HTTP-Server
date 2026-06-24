@@ -1,5 +1,5 @@
 CXX ?= g++
-CXXFLAGS ?= -std=c++17 -Wall -Wextra -O2 -g
+CXXFLAGS ?= -std=c++17 -Wall -Wextra -O2 -g -Iinclude
 LDFLAGS ?=
 SRC := $(wildcard src/*.cpp)
 OBJ := $(SRC:.cpp=.o)
